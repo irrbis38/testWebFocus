@@ -4,84 +4,233 @@
 
 /* source-sans-pro-regular - latin_cyrillic */
 @font-face {
-	font-family: 'Source Sans Pro';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
-		 url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff2') format('woff2'), 
-		 url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff') format('woff');
-  }
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff2') format('woff2'), url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff') format('woff');
+}
 
 /* commissioner-regular - latin_cyrillic */
 @font-face {
-	font-family: 'Commissioner';
-	font-style: normal;
-	font-weight: 400;
-	src: local(''),
-		 url('../fonts/commissioner-v1-latin_cyrillic-regular.woff2') format('woff2'), 
-		 url('../fonts/commissioner-v1-latin_cyrillic-regular.woff') format('woff');
-  }
-  
-  /* commissioner-500 - latin_cyrillic */
-  @font-face {
-	font-family: 'Commissioner';
-	font-style: normal;
-	font-weight: 500;
-	src: local(''),
-		 url('../fonts/commissioner-v1-latin_cyrillic-500.woff2') format('woff2'),
-		 url('../fonts/commissioner-v1-latin_cyrillic-500.woff') format('woff');
-  }
-  
-  /* commissioner-700 - latin_cyrillic */
-  @font-face {
-	font-family: 'Commissioner';
-	font-style: normal;
-	font-weight: 700;
-	src: local(''),
-		 url('../fonts/commissioner-v1-latin_cyrillic-700.woff2') format('woff2'),
-		 url('../fonts/commissioner-v1-latin_cyrillic-700.woff') format('woff');
-  }
-  
-  /* lato-300 */
-  @font-face {
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 300;
-	src: local(''),
-		 url('../fonts/Lato-Light.woff2') format('woff2'),
-		 url('../fonts/Lato-Light.woff') format('woff');
-  }
-  
-  /* lato-400 */
-  @font-face {
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 400;
-	src: local(''),
-		 url('../fonts/Lato-Regular.woff2') format('woff2'),
-		 url('../fonts/Lato-Regular.woff') format('woff');
-  }
-  
-  /* lato-600 */
-  @font-face {
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 600;
-	src: local(''),
-		 url('../fonts/Lato-Semibold.woff2') format('woff2'),
-		 url('../fonts/Lato-Semibold.woff') format('woff');
-  }
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/commissioner-v1-latin_cyrillic-regular.woff2') format('woff2'), url('../fonts/commissioner-v1-latin_cyrillic-regular.woff') format('woff');
+}
 
+/* commissioner-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), url('../fonts/commissioner-v1-latin_cyrillic-500.woff2') format('woff2'), url('../fonts/commissioner-v1-latin_cyrillic-500.woff') format('woff');
+}
+
+/* commissioner-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/commissioner-v1-latin_cyrillic-700.woff2') format('woff2'), url('../fonts/commissioner-v1-latin_cyrillic-700.woff') format('woff');
+}
+
+/* lato-300 */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''), url('../fonts/Lato-Light.woff2') format('woff2'), url('../fonts/Lato-Light.woff') format('woff');
+}
+
+/* lato-400 */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+}
+
+/* lato-600 */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''), url('../fonts/Lato-Semibold.woff2') format('woff2'), url('../fonts/Lato-Semibold.woff') format('woff');
+}
 
 /* ======================================== */
 /* Сброс стилей CSS */
-/* ======================================== */
-
 @import "./normalize";
 
-/* ======================================== */
 /* Конец сброса стилей CSS */
 /* ======================================== */
 
+/* ======================================== */
+/* Основные стили */
 
-  
+html {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Конец основных стилей */
+/* ======================================== */
+
+/* ======================================== */
+/* Стили header */
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 33px;
+}
+
+.header__lang {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.header__lang span {
+    margin-right: 13px;
+}
+
+.header__lang select {
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.8);
+    appearance: none;
+    background: url("../img/header/arrow-down.svg") no-repeat right 6px;
+    padding-right: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.header__poorVision {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header__poorVision button {
+	outline: none;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header__contactNumber {
+	margin-right: 15px;
+	font-family: 'Commissioner', sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.header__contactIcon {
+	margin-right: 14px;
+}
+
+.header__contactIcon:last-child {
+	margin-right: 0;
+}
+
+.header__main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	position: relative;
+}
+
+.header__logo img{
+	display: block;
+}
+
+.header__logo a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Commissioner', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.header__navLink {
+	margin-right: 50px;
+	text-transform: uppercase;
+	text-decoration: none;	
+	color: rgba(0, 0, 0, 0.75);
+	position: relative;
+
+}
+
+.header__navLink:last-child {
+	margin-right: 0;
+}
+
+.header__navLink::after {
+	content: "";
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.75);
+	transition: all .2s linear;
+}
+
+.header__navLink:hover::after {
+	opacity: 1;
+}
+
+.header__nav button {
+	outline: none;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+
+/* Конец стилей header */
+/* ======================================== */
