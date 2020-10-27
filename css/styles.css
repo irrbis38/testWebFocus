@@ -1,0 +1,87 @@
+/* ======================================== */
+/* Подключение шрифтов */
+/* ======================================== */
+
+/* source-sans-pro-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+		 url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff2') format('woff2'), 
+		 url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff') format('woff');
+  }
+
+/* commissioner-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		 url('../fonts/commissioner-v1-latin_cyrillic-regular.woff2') format('woff2'), 
+		 url('../fonts/commissioner-v1-latin_cyrillic-regular.woff') format('woff');
+  }
+  
+  /* commissioner-500 - latin_cyrillic */
+  @font-face {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 500;
+	src: local(''),
+		 url('../fonts/commissioner-v1-latin_cyrillic-500.woff2') format('woff2'),
+		 url('../fonts/commissioner-v1-latin_cyrillic-500.woff') format('woff');
+  }
+  
+  /* commissioner-700 - latin_cyrillic */
+  @font-face {
+	font-family: 'Commissioner';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		 url('../fonts/commissioner-v1-latin_cyrillic-700.woff2') format('woff2'),
+		 url('../fonts/commissioner-v1-latin_cyrillic-700.woff') format('woff');
+  }
+  
+  /* lato-300 */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+		 url('../fonts/Lato-Light.woff2') format('woff2'),
+		 url('../fonts/Lato-Light.woff') format('woff');
+  }
+  
+  /* lato-400 */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		 url('../fonts/Lato-Regular.woff2') format('woff2'),
+		 url('../fonts/Lato-Regular.woff') format('woff');
+  }
+  
+  /* lato-600 */
+  @font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 600;
+	src: local(''),
+		 url('../fonts/Lato-Semibold.woff2') format('woff2'),
+		 url('../fonts/Lato-Semibold.woff') format('woff');
+  }
+
+
+/* ======================================== */
+/* Сброс стилей CSS */
+/* ======================================== */
+
+@import "./normalize";
+
+/* ======================================== */
+/* Конец сброса стилей CSS */
+/* ======================================== */
+
+
+  
