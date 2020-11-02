@@ -294,9 +294,33 @@ a:focus {
 /* ======================================== */
 /* Начало стилей main */
 
+
 .main {
-	padding: 160px 0 121px;
-	background: url("../img/main/main-slider-collection.jpg") center / cover no-repeat;
+	position: relative;
+	height: 650px;
+}
+
+.main__slider {
+	width: 100%;
+}
+
+.main__sliderItem {
+	position: relative;
+}
+
+.main__sliderItem img {
+	width: 100%;
+	display: block;
+	height: 650px;
+	object-fit: cover;
+	object-position: center center;
+}
+
+.main__description {
+	position: absolute;
+	top: 160px;
+	width: 100%;
+	z-index: 80;
 }
 
 .main__title {
@@ -318,25 +342,29 @@ a:focus {
 	color: rgba(0, 0, 0, 0.8);
 }
 
-.main .small__btn {
-	margin-bottom: 111px;
+.main__sliderNavbar {
+	position: absolute;
+	width: 100%;
+	top: 511px;
+	left: 0;
+	z-index: 200;
 }
 
 .main__arrows {
-	width: 70px;
-	margin-left: 20px;
-	margin-bottom: 31px;
 	display: flex;
 	justify-content: space-between;
+	width: 70px;
+	margin-left: 40px;
 }
 
-.main__arrows a:first-child {
-	margin-right: 50px;
+.main__prev, .main__next {
+	cursor: pointer;
 }
 
 .main__advantages {
-	margin-bottom: -331px;
-	max-width: 1170px;
+	position: relative;
+	z-index: 150;
+	top: -100px;
 	display: flex;
 	justify-content: space-between;
 }
